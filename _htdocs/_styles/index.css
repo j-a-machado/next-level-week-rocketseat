@@ -1,20 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@300;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-}
 body {
     height: 100vh;
     background: url("../_image/home-background.svg") no-repeat #F0F0F5;
     background-position: 35vw 18vh;
+    -webkit-font-smoothing: antialiased;
 }
 .content {
     width: 76vw;
     height: 100%;
     margin: 0 auto 0 auto;
 }
-.header {
+
+.content .header {
     width: 100%;
     height: 15%;
     min-height: 80px;
@@ -22,44 +18,45 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.logo {
+.content .header .logo {
     width: 181px;
     height: 44px;
 }
-.logo figcaption {
+.content .header .logo figcaption {
     visibility: hidden;
 }
-.cadastro {
+.content .header .cadastro {
     width: 250px;
     height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cadastro p {
+.content .header .cadastro p {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
     text-align: right;
-    color: #322153;
+    color: var(--texto);
 }
-.main {
+
+.content .main {
     width: 100%;
     height: 85vh;
     min-height: 300px;
     display: flex;
     align-items: center;
 }
-.left {
+.content .main .left {
     width: 45vw;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.left h1 {
+.content .main .left h1 {
     width: 100%;
     margin-left: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -67,9 +64,9 @@ body {
     font-weight: bold;
     font-size: 3em;
     line-height: 64px;
-    color: #322153;
+    color: var(--texto);
 }
-.left h2 {
+.content .main .left h2 {
     width: 448px;
     height: 76px;
     margin: 24px auto 40px 0;
@@ -78,77 +75,39 @@ body {
     font-weight: normal;
     font-size: 24px;
     line-height: 38px;
-    color: #6C6C80;
+    color: var(--texto-secundario);
 }
-.btn {
+.content .main .left .btn {
     width: 348px;
     height: 72px;
-    background: #34CB79;
+    background: var(--verde-claro);
     border-radius: 8px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.btn-search-square {
+.content .main .left .btn .btn-search-square {
     width: 72px;
     height: 100%;
-    background: #2FB86E;
-    border-radius: 8px 0px 0px 8px;
+    background: var(--verde-escuro);
+    border-radius: 8px 0 0 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btn img {
+.content .main .left .btn .btn-search-square img {
     width: 25px;
     margin: 0;
     padding: 0;
 }
-.btn-text-square {
+.content .main .left .btn .btn-text-square {
     background: none;
     border: none;
     margin: auto;
-    color: #fff;
+    color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 19px;
-}
-
-@media (max-width: 900px) {
-    body {
-        background-position: 70vw 100vh;
-    }
-    .main {
-        height: 70vh;
-    }
-    .left {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .left h1 {
-        width: 100%;
-        text-align: center;
-    }
-    .left h2 {
-        width: 70%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .header {
-        justify-content: center;
-    }
-    .logo {
-
-    }
-    .cadastro {
-        position: absolute;
-        bottom: 5vh;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 }
