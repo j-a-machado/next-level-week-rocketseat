@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background: var(--cinza-background);
+}
+.content {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+:root {
+    --texto: #322153;
+    --texto-secundario: #6C6C80;
+    --texto-placeholder: #A0A0B2;
+    --verde-background: #E1FAEC;
+    --verde-claro: #34CB79;
+    --verde-escuro: #2FB86E;
+    --verde-escuro-disabled: rgba(47, 184, 111, .5);
+    --cinza-background: #F0F0F5;
+    --preto-background: rgba(14, 10, 20, .95);
+}

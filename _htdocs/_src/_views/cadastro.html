@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecoleta | Cadastro</title>
+
+
+    <!-- STYLECHEETS -->
+    <link href="../../_public/_styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../../_public/_styles/cadastro.css" rel="stylesheet" type="text/css">
+    <link href="../../_public/_styles/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <a href="index.html" class="logo">
+                <figure>
+                    <img src="../../_public/_image/logo.svg" alt="Logo da Ecoleta">
+                    <figcaption>Ecoleta - Encontre o ponto de coleta mais próximo</figcaption>
+                </figure>
+            </a>
+            <a class="voltar" href="index.html">
+                <img src="../../_public/_image/arrow-left.svg" alt="voltar para a página inicial">
+                <p>Voltar para home</p>
+            </a>
+        </div>
+        <form class="form" action="">
+            <h1>Cadastro do ponto de coleta</h1>
+
+            <!-- Dados da entidade -->
+            <fieldset>
+                <h2>Dados da entidade</h2>
+                <div class="field name">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address">Endereço</label>
+                        <input type="text" name="address" id="address" required>
+                    </div>
+                    <div class="field num">
+                        <label for="num">Número / Complemento</label>
+                        <input type="text" name="num" id="num" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label for="uf">Estado</label>
+                        <select id="uf">
+                            <option value="">Selecione o estado</option>
+                        </select>
+                        <input type="hidden" name="state" id="state" value="" required>
+                    </div>
+                    <div class="field city">
+                        <label for="city">Cidade</label>
+                        <select disabled id="city">
+                            <option  value="">Selecione a cidade</option>
+                        </select>
+                        <input type="hidden" name="city" id="cityHidden" value="" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Ítens de coleta -->
+            <fieldset>
+                <div class="subtitle">
+                    <h2>Ítens de coleta</h2>
+                    <p>Selecione um ou mais ítens abaixo</p>
+                </div>
+                <div class="itens-grid">
+                    <li data-id="1">
+                        <img src="../../_public/_image/lampadas.svg" alt="lâmpadas">
+                        <span>Lâmpadas</span>
+                    </li>
+                    <li data-id="2">
+                        <img src="../../_public/_image/baterias.svg" alt="baterias">
+                        <span>Pilhas e baterias</span>
+                    </li>
+                    <li data-id="3">
+                        <img src="../../_public/_image/papeis-papelao.svg" alt="papéis e papelão">
+                        <span>Papéis e papelão</span>
+                    </li>
+                    <li data-id="4">
+                        <img src="../../_public/_image/eletronicos.svg" alt="resíduos eletrônicos">
+                        <span>Resíduos eletrônicos</span>
+                    </li>
+                    <li data-id="5">
+                        <img src="../../_public/_image/organicos.svg" alt="resíduos orgânicos">
+                        <span>Resíduos orgânicos</span>
+                    </li>
+                    <li data-id="6">
+                        <img src="../../_public/_image/oleo.svg" alt="óleo de cozinha">
+                        <span>Óleo de cozinha</span>
+                    </li>
+                </div>
+                <input type="hidden" name="itensSelecionados">
+            </fieldset>
+
+            <button type="submit">Cadastrar ponto de coleta</button>
+        </form>
+    </div>
+    <script src="../../_public/_scripts/cadastro.js"></script>
+</body>
+</html>

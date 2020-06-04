@@ -1,0 +1,101 @@
+body:after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 40vh;
+    background: var(--cinza-background);
+}
+
+.content .header {
+    width: 100%;
+    height: 15vh;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .header .logo {
+    width: 181px;
+    height: 44px;
+}
+.content .header .logo figcaption {
+    visibility: hidden;
+}
+.content .header .voltar {
+    width: 165px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+.content .header .voltar img {
+    width: 24px;
+    height: 24px;
+}
+.content .header .voltar p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: var(--texto);
+}
+
+.content .main {
+    margin-top: 35px;
+}
+.content .main p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--texto-secundario);
+}
+.content .main .grid-resultados {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.content .main .grid-resultados .card {
+    width: 352px;
+    height: 465px;
+}
+.content .main .grid-resultados .card img {
+    width: 100%;
+    height: 198px;
+}
+.content .main .grid-resultados .card .instituicao-nome {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+    color: var(--texto);
+    margin-top: 15px;
+}
+.content .main .grid-resultados .card .instituicao-coleta {
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--verde-claro);
+    margin-top: 12px;
+}
+.content .main .grid-resultados .card .instituicao-endereco {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--texto-secundario);
+    margin-top: 12px;
+}
+

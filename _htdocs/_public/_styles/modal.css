@@ -1,0 +1,101 @@
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--preto-background);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
+}
+#modal.hide {
+    display: none;
+    transition-delay: 2s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -o-transition-delay: 2s;
+}
+#modal .modal-content {
+
+}
+#modal .modal-content .modal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#modal .modal-content .modal-header p {
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#modal .modal-content .modal-header a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    color: var(--verde-claro);
+    padding: 10px;
+    cursor: pointer;
+}
+#modal .modal-content .field-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modal .modal-content .field-group .field {
+    width: 420px;
+}
+#modal .modal-content .field-group .field select {
+    width: 420px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 0 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--texto-placeholder);
+
+    cursor: pointer;
+}
+#modal .modal-content .field-group .botaoBuscar {
+    width: 420px;
+    height: 56px;
+    background: var(--verde-claro);
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+.disabled {
+    background: var(--verde-escuro-disabled) !important;
+    cursor: auto !important;
+}
