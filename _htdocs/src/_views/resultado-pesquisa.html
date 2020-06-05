@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da pesquisa</title>
+
+    <!-- STYLECHEETS -->
+    <link href="../../_styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../../_styles/resultado-pesquisa.css" rel="stylesheet" type="text/css">
+    <link href="../../_styles/responsive.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="content">
+        <!-- Header que se encontra no caminho partials/header-index.html -->
+        {% include "partials/header-others.html" %}
+        <div class="main">
+            <p><strong>2 pontos</strong> encontrados</p>
+            <div class="grid-resultados">
+                <div class="card">
+                    <img src="../../_image/colectoria.png" alt="Colectoria">
+                    <p class="instituicao-nome">Colectoria</p>
+                    <p class="instituicao-coleta">Resíduos Eletrônicos, Lâmpadas</p>
+                    <p class="instituicao-endereco">
+                        Rio do Sul, Santa Catarina<br>
+                        Guilherme Gemballa, Jardim América<br>
+                        Nº 260
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="../../_image/paperside.png" alt="Papersider">
+                    <p class="instituicao-nome">Papersider</p>
+                    <p class="instituicao-coleta">Papéis e papelão</p>
+                    <p class="instituicao-endereco">
+                        Rio do Sul, Santa Catarina<br>
+                        Guilherme Gemballa, Jardim América<br>
+                        Nº 260
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
