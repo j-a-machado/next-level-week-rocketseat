@@ -22,7 +22,6 @@ function populateUFs () {
                 ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
             }
         } );
-
 }
 
 //Roda a função escrita acima

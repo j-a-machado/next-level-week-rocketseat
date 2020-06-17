@@ -14,10 +14,11 @@ Aula 4: Aprender a trabalhar com Node.js e npm.
 
 ###Para rodar este projeto no seu computador:
 * Abra o Terminal.
-* Digite 'npm run'.
-* Digite 'node'.
-* Digite '.load src/server.js'.
+* Certifique-se de estar na pasta _htdocs.
+* Digite 'npm start'.
 * No browser, digite o endereço 'localhost:3000/'.
 
-O resultado tem que ser, pelo menos 'Cannot GET /'. Isso significa que o servidor está rodadndo, mas não encontrou 
+O resultado tem que ser, pelo menos 'Cannot GET /'. Isso significa que o servidor está rodando, mas não encontrou 
 nada neste endereço.
+
+Para parar o servidor, basta teclar Ctrl+C
